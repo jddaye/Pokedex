@@ -31,3 +31,27 @@ body {
 	font-size: 22px;
 	background-color: var(--background);
 }
+
+/* <500px */
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 500px to 750px */
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* <shared content <750 */
+@media all and (max-width:  750px) {
+	.grid {
+		grid-gap: 10px;
+	}
+	.grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
