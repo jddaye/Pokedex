@@ -1,0 +1,33 @@
+*{
+	box-sizing: border-box;
+}
+
+:root {
+	--background: #FFF;
+	--background-header: #F5F5F5;
+}
+
+header {
+	border: solid;
+	margin: 0px 0px 50px 0px;
+	background-color: var(--background-header);
+}
+
+.page-header {
+	display: flex;
+}
+
+
+#logo {
+	height: 200px;
+}
+
+#vulpix {
+	height: 90px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	background-color: var(--background);
+}
