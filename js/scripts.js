@@ -27,9 +27,8 @@ pokemonRepository.add (
 {name: 'Abra', height: '.9', type: 'Psychic'},
 );
 
-function pokemonLoop(pokemon) {
-  console.log(pokemon.name + ' is ' + pokemon.height 'm tall and is ' + pokemon.type + ' type');
-}
-pokemonList.forEach(pokemonLoop);
+console.log(pokemonRepository.getAll());
 
-//console.log(pokemonRepository.getAll()); <- This one works, but only prints the first pokemon
+pokemonRepository.getAll().forEach(function(pokemon) {
+  console.log(pokemon.name + ' is ' + pokemon.height + 'm tall.');
+});
