@@ -5,6 +5,7 @@
 :root {
 	--background: #FFF;
 	--background-header: #F5F5F5;
+	--black: #000;
 }
 
 header {
@@ -24,13 +25,19 @@ header {
 }
 
 #vulpix {
-	height: 90px;
+	height: 200px;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 22px;
 	background-color: var(--background);
+}
+
+.button-class {
+	background-color: var(--background-header);
+	border: solid;
+	border-color: var(--black);
 }
 
 /* <500px */
