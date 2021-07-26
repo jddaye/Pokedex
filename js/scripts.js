@@ -13,10 +13,17 @@ let pokemonRepository = (function () {
     let pokemonList = document.querySelector('.pokemon-list');
     let listpokemon = document.createElement('li');
     let button = document.createElement('button');
-    button.innterText = "pokemon.name";
+    button.innerText = pokemon.name;
     button.classList.add('button-class');
+    button.addEventListener('click', function (showDetails) { 
+      console.log(pokemon)
+    });
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
+  }
+
+  function showDetails(pokemon) {
+    console.log()
   }
 
   return {
