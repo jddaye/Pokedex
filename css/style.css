@@ -34,10 +34,17 @@ body {
 	background-color: var(--background);
 }
 
+ul {
+	list-style: none;
+}
+
 .button-class {
+	width: 200px;
+	height: 50px;
 	background-color: var(--background-header);
 	border: solid;
 	border-color: var(--black);
+	font-size: 18px;
 }
 
 /* <500px */
@@ -63,3 +70,4 @@ body {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+}
