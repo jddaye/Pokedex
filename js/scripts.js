@@ -2,7 +2,7 @@ let pokemonRepository = (function () {
 
   let modalContainer = document.querySelector('#modal-container');
 
-  let modal = document.querySelector('modal');
+  let modal = document.querySelector('.modal');
 
   let modalClose = document.createElement('button');
   modalClose.classList.add('modal-close');
