@@ -4,9 +4,11 @@
 }
 
 :root {
-	--background: #FFF;
+	--background-page: #FFF;
 	--background-header: #F5F5F5;
+	--background-modal: #30A7D7;
 	--black: #000;
+	--white: #fff;
 }
 
 header {
@@ -32,7 +34,7 @@ header {
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 22px;
-	background-color: var(--background);
+	background-color: var(--background-page);
 }
 
 ul {
@@ -71,8 +73,9 @@ ul {
 	background: #fff;
 	padding: 15px;
 	width: 100%;
-	max-width: 700px;
+	max-width: 500px;
 	text-align: left;
+	border-radius: 5%;
   }
   
   .modal-close {
@@ -80,7 +83,7 @@ ul {
 	-webkit-appearance: none;
 	border: 0;
 	background: none;
-	color: #777;
+	color: #000;
 	text-decoration: underline;
   }
   
@@ -100,6 +103,20 @@ ul {
 	/* CSS for modal container - add your own desired CSS styles here */
 	display: block;
   }
+
+.pokemonName, .pokemonHeight, .pokemonWeight, .pokemonImage, .pokemonType, .img-container {
+	margin: auto;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: var(--background-modal);
+	padding: 15px;
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	font-size: 25px;
+	color: #FFF;
+}
+
 
 /* RESIZING */
 /* <500px */
