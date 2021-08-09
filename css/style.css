@@ -104,7 +104,7 @@ ul {
 	display: block;
   }
 
-.pokemonName, .pokemonHeight, .pokemonWeight, .pokemonImage, .pokemonType, .img-container {
+.pokemonName, .pokemonHeight, .pokemonWeight, .pokemonImage, .pokemonTypes, .img-container {
 	margin: auto;
 	display: inline-block;
 	box-sizing: border-box;
@@ -115,6 +115,10 @@ ul {
 	text-align: center;
 	font-size: 25px;
 	color: #FFF;
+}
+
+.pokemonImage {
+	height: 300px
 }
 
 

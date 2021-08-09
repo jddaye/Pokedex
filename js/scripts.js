@@ -24,8 +24,8 @@ let pokemonRepository = (function () {
   let pokemonImage = document.createElement('img');
   pokemonImage.classList.add('pokemonImage');
 
-  let pokemonType = document.createElement('p');
-  pokemonType.classList.add('pokemonType');
+  let pokemonTypes = document.createElement('p');
+  pokemonTypes.classList.add('pokemonTypes');
 
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
@@ -83,11 +83,13 @@ let pokemonRepository = (function () {
 
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
+      console.log(pokemon);
+
       pokemonName.innerHTML = pokemon.name;
       pokemonImage.src = pokemon.imageUrl;
       pokemonHeight.innerHTML = 'height: ' + pokemon.height;
       pokemonWeight.innerHTML = 'weight: ' + pokemon.weight;
-      pokemonType.innerHTML = 'type: ' + pokemon.type;
+      pokemonTypes.innerHTML = 'type: ' + pokemon.types;
       modalClose.innerHTML = 'Close';
       showModal(pokemon);
     });
@@ -115,7 +117,7 @@ let pokemonRepository = (function () {
     return fetch(url).then(function (response) {
       return response.json();
     }).then(function (details) {
-      item.imageUrl = details.sprites.other.dream_world;
+      item.imageUrl = details.sprites.other.dream_world.front_default;
       item.height = details.height;
       item.weight = details.weight;
       item.types = details.types;
@@ -128,7 +130,7 @@ let pokemonRepository = (function () {
   modal.appendChild(pokemonName);
   modal.appendChild(pokemonHeight);
   modal.appendChild(pokemonWeight);
-  modal.appendChild(pokemonType);
+  modal.appendChild(pokemonTypes);
   modal.appendChild(imageContainer);
   imageContainer.appendChild(pokemonImage);
 
