@@ -5,7 +5,9 @@ let pokemonRepository = (function () {
   let modal = document.querySelector('.modal');
 
   let modalClose = document.createElement('button');
+  modalClose.innerText = 'Close';
   modalClose.classList.add('modal-close');
+
 
   let pokemonName = document.createElement('h1');
   pokemonName.classList.add('pokemonName');
@@ -83,10 +85,10 @@ let pokemonRepository = (function () {
     loadDetails(pokemon).then(function () {
       pokemonName.innerHTML = pokemon.name;
       pokemonImage.src = pokemon.imageUrl;
-      pokemonHeight.innerHTML = 'Height: ' + pokemon.height;
-      pokemonWeight.innterHTML = 'Weight: ' + pokemon.weight;
-      pokemonType.innterHTML = 'Type: ' + pokemon.type;
-      modalClose.innterHTML = 'Close';
+      pokemonHeight.innerHTML = 'height: ' + pokemon.height;
+      pokemonWeight.innerHTML = 'weight: ' + pokemon.weight;
+      pokemonType.innerHTML = 'type: ' + pokemon.type;
+      modalClose.innerHTML = 'Close';
       showModal(pokemon);
     });
   }
