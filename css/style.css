@@ -39,6 +39,7 @@ body {
 
 ul {
 	list-style: none;
+	text-align: center;
 }
 
 .button-class {
@@ -63,7 +64,7 @@ ul {
 	z-index: 999; 
 	overflow: auto; 
 	display: grid;
-	text-align: center;
+	text-align: left;
   }
   
   .modal {
@@ -74,7 +75,7 @@ ul {
 	padding: 15px;
 	width: 100%;
 	max-width: 500px;
-	text-align: left;
+	text-align: center;
 	border-radius: 5%;
   }
   
@@ -115,6 +116,10 @@ ul {
 	text-align: center;
 	font-size: 25px;
 	color: #FFF;
+}
+
+.pokemonName {
+	color: #000;
 }
 
 .pokemonImage {
