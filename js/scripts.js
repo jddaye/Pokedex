@@ -120,7 +120,10 @@ let pokemonRepository = (function () {
       item.imageUrl = details.sprites.other.dream_world.front_default;
       item.height = details.height;
       item.weight = details.weight;
-      item.types = details.types;
+      item.types = []
+        for (let i = 0; i < details.types.length; i++) {
+          item.types.push(" " + details.types[i].type.name)
+        }
     }).catch(function (e) {
       console.error(e);
     });
