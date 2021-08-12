@@ -111,11 +111,11 @@ let pokemonRepository = (function () {
 
     let typesElement = $('<p>' + 'Types : ' + pokemon.types + '</p>');
 
-    modalTitle.appendChild(nameElement);
-    modalBody.appendChild(imageElement);
-    modalBody.appendChild(heightElement);
-    modalBody.appendChild(weightElement);
-    modalBody.appendChild(typesElement);
+    modalTitle.append(nameElement);
+    modalBody.append(imageElement);
+    modalBody.append(heightElement);
+    modalBody.append(weightElement);
+    modalBody.append(typesElement);
   }
 
 

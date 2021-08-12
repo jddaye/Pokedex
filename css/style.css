@@ -51,6 +51,11 @@ ul {
 	font-size: 18px;
 }
 
+.modal-body, .modal-title {
+	text-align: center;
+	width: 500px;
+}
+
 .pokemonName, .pokemonHeight, .pokemonWeight, .pokemonImage, .pokemonTypes, .img-container {
 	margin: auto;
 	display: inline-block;
