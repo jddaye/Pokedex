@@ -2,7 +2,7 @@
 let pokemonRepository = (function () {
 
   let pokemonList = [];
-  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=151';
 
 
   
@@ -109,7 +109,7 @@ let pokemonRepository = (function () {
 
     let weightElement = $('<p>' + 'weight: ' + pokemon.weight + '</p>');
 
-    let typesElement = $('<p>' + 'Types : ' + pokemon.types + '</p>');
+    let typesElement = $('<p>' + 'types : ' + pokemon.types + '</p>');
 
     modalTitle.append(nameElement);
     modalBody.append(imageElement);
