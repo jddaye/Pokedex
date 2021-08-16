@@ -1,0 +1,152 @@
+/* GLOBAL */
+*{
+	box-sizing: border-box;
+}
+
+/* Header */ 
+header {
+	margin: 0px 0px 50px 0px;
+	background-color: #f5f5f5;
+	border: solid;
+	border-color: #616161;
+}
+
+.page-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+#logo {
+	height: 200px;
+}
+
+#vulpix {
+	height: 200px;
+}
+
+/* Body */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	background-color: #919191;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+}
+
+.btn {
+	width: 175px;
+	height: 50px;
+	background-color: #a4a4a4;
+	border: none;
+	border-color: undefined;
+	font-size: 18px;
+}
+
+.modal-content {
+	background-color: #f2f2f2;
+}
+
+.modal-body, .modal-title {
+	text-align: center;
+	width: 500px;
+}
+
+.list-group-item {
+	background-color: #fff;
+}
+
+.pokemon-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+.pokemonName {
+	margin: auto;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #f2f2f2;
+	padding: 15px;
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	font-size: 25px;
+	color: #FFF;
+}
+
+.pokemonHeight {
+	margin: auto;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #f2f2f2;
+	padding: 15px;
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	font-size: 25px;
+	color: #FFF;
+}
+
+.pokemonWeight {
+	margin: auto;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #f2f2f2;
+	padding: 15px;
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	font-size: 25px;
+	color: #FFF;
+}
+
+.pokemonImage {
+	margin: auto;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #f2f2f2;
+	padding: 15px;
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	font-size: 25px;
+	color: #FFF;
+}
+
+.pokemonTypes {
+	margin: auto;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #f2f2f2;
+	padding: 15px;
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	font-size: 25px;
+	color: #FFF;
+}
+
+.img-container {
+	margin: auto;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #f2f2f2;
+	padding: 15px;
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	font-size: 25px;
+	color: #FFF;
+}
+
+.pokemonName {
+	color: #000;
+}
+
+.pokemonImage {
+	height: 300px
+}
